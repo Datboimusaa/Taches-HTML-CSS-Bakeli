@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    font-size: 62.5%;
+}
+.image-container {
+    width: 60vw;
+    height: 100%;
+}
+.form-container {
+    width: 40vw;
+    height: 100%;
+    background-color: rgb(30, 10, 10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img {
+    height: 100%;
+    width: 100%;
+}
+h1{
+    font-size: 2.8rem;
+    color: white;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+.input-group {
+    position: relative;
+    margin-bottom: 3rem;
+}
+.input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 1rem;
+    background: transparent;
+    color: #ccc;
+}
+.input-group label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #aaa;
+    transition: 0.2s ;
+    pointer-events: none;
+}
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 0.8rem;
+    color: #fff;
+}
+.select-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 1rem;
+    background: transparent;
+    color: #ccc; 
+    margin-bottom: 3rem;
+}
+.radio-group {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+.radio-group input[type="radio"] {
+    display: none;
+}
+.radio-group label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+    background: transparent;
+    background-color: white;
+    border-radius: 100%;
+}
+.Person {
+    display: none;
+    margin-left: 0.3rem;
+}
+.radio-group input[type="radio"]:checked +label {
+    background: #d6b48d;
+    color: white;
+    width: 7rem;
+    border-radius: 50%;
+}
+.radio-group input[type="radio"]:checked + label .Person {
+    display: inline;
+}
+.radio-label {
+    font-size: 1.4rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+button {
+    padding: 1rem;
+    width: 10rem;
+    background-color: #d6b48d;
+    color: white;
+    border: none;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #d6b48d;
+}
+a:hover {
+    text-decoration: underline;
+}
+option {
+    color: black;
+}

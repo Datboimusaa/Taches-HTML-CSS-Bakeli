@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-size: 62.5%;
+    font-family: "Montserrat", sans-serif;
+}
+/*====================header====================*/
+header{
+    position: relative;
+}
+/*info*/
+.info-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #222;
+    padding: 2rem 0;
+}
+.info-txt {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.info-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.info-links {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 1.2rem;
+}
+.info-links:hover {
+    color: white;
+}
+@media (max-width:1000px) {
+    .info-txt {
+        font-size: 1rem;
+    }
+    .info-menu {
+        gap: 1rem;
+    }
+    .info-links {
+        font-size: 1rem;
+    }
+}
+@media (max-width:500px) {
+    .info-txt {
+        font-size: 0.7rem;
+    }
+    .info-links {
+        font-size: 0.7rem;
+    }
+}
+/*navBar*/
+
+.navigation-bar {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-col1, .nav-col2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    height: 25rem;
+    width: 15rem;
+    position: absolute;
+    left: 6%;
+    top: -40%;
+    object-fit: contain;
+}
+.navigation-menu {
+    list-style-type: none;
+    display: flex;
+}
+.navigation-links {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+    padding: 1.8rem;
+}
+.navigation-links:hover {
+    background-color: #ccc;
+}
+.navigation-icons {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+    padding: 1.8rem;
+}
+.navigation-icons:hover {
+    background-color: #ccc;
+}
+.list-item {
+    border: 1px solid #ccc;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:1000px) {
+    .navigation-links {
+        font-size: 1.2rem;
+        padding: 1.4rem;
+    }
+    .navigation-icons {
+        font-size: 1.2rem;
+        padding: 1.4rem;
+    }
+    .logo {
+        left: 1%;
+        top: 35%;
+        height: 7rem;
+        width: auto;
+        object-fit: cover;
+    }
+}
+@media (max-widht:500px) {
+    .navigation-bar{
+        justify-content: center;
+    }
+    .logo {
+        position: relative;
+    }
+    .navigation-links {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .navigation-icons {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
+/*====================Hero-section====================*/
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(hero-background-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 8rem;
+}
+.hero-logo {
+    height: 20rem;
+}
+.hero-header {
+    font-size: 3.6rem;
+    color: white;
+    margin-bottom: 1rem,
+}
+.hero-text {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 5rem;
+}
+.hero-button {
+    padding: 1rem 2rem;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    margin-bottom: 5rem;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.hero-button:hover {
+    background-color: white;
+    color: black;
+}
+@media (max-width:500px) {
+    .hero-header {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+    .hero-text {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}
+/*====================Blog-section====================*/
+.blog-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252, 243, 243);
+    position: relative;
+    height: 60rem;
+}
+.img-container {
+    width: 80%;
+    height: 40rem;
+    display: flex;
+    position: absolute;
+    top: -10%;
+}
+.images {
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+}
+.blog-header {
+    font-size: 3rem;
+    margin-top: 13rem;
+}
+@media (max-width:1000px) {
+    .img-container {
+        height: 25rem;
+        width: 90%;
+    }
+}
+@media (max-width:500px) {
+    .img-container {
+        height: 15rem;
+    }
+}

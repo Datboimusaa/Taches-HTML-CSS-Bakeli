@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(background-image.jpg) ;
+    background-size: cover;
+}
+.form-container {
+    height: 600px;
+    width: 800px;
+    background-color: white;
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.image-container {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 370px;
+    height: 570px;
+}
+.form {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.names{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.fname  {
+    height: 30px;
+    border: none;
+    border: none;
+    border-bottom: 1px  solid black;
+}
+.lname {
+    height: 30px;
+    border: none;
+    border: none;
+    border-bottom: 1px  solid black;
+}
+.uname {
+    height: 30px;
+    width: 336px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px  solid black;
+}
+.mail {
+    height: 30px;
+    width: 336px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px  solid black;
+}
+select {
+    height: 30px;
+    width: 342px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px  solid black;
+}
+#password {
+    height: 30px;
+    width: 336px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px  solid black;
+}
+button {
+    height: 40px;
+    width: 128px;
+    margin-top: 20px;
+    margin-left: 100px;
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+h1 {
+    margin-left: 40px;
+    margin-top: 50px;
+}
